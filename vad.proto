@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package vad;
+
+message Audio {
+    bytes data = 1;
+    string trashold = 2;
+}
+
+message Output_Audio {
+    string link = 1;
+}
+
+service VAD {
+    rpc s2c(Audio) returns (Output_Audio) {}
+}
