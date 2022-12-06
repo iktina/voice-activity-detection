@@ -12,5 +12,5 @@ message Output_Audio {
 }
 
 service VAD {
-    rpc s2c(Audio) returns (Output_Audio) {}
+    rpc speech_slicing(Audio) returns (Output_Audio) {}
 }
